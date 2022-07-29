@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/MarkerCluster.css">
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+        <!--Start of the custom include style.css for custom page layout-->
+        <link rel="stylesheet" href="style.css">
+        <style>
+        #map {
+            width: 2260px;
+            height: 1251px;
+        }
+        </style>
+        <title>CNL Canada map</title>
+    </head>
+    <body>
+        <header>
+            <!--create custom nav bar-->
+        <nav>
+            <ul class="nav__links">
+                <li><a href="index.html">Home</a></li>
+                <li ><a href="#news">Active Branch</a></li>
+                <li><a href="#contact">Historical Branch</a></li>
+                <li class="nav"><a href="reference.html">Reference</a></li>
+            </ul>
+        </nav>
+        </header>
+        <!--end of custom-->
+    <div class="content">
+        <h2>Sources: Active Branch</h2>
+        <p>[1] 中國國民黨駐加拿大總支部 文獻
+          <br>[2] 中國國民黨域多利分部 文獻
+          <br>[3] Dr Alison R Marshall, Brandon University (https://people.brandonu.ca/marshalla/)
+          <br>[4] The Paul Yee Archives (https://searcharchives.vancouver.ca/paul-yee-fonds; https://searcharchives.vancouver.ca/chinese-nationalist-league-sign-victoria-b-c)
+          <br>[5] Simon Fraser University (http://www.sfu.ca/chinese-canadian-history/toronto_chinatown.html)
+          <br>[6] Simon Fraser University (http://www.sfu.ca/chinese-canadian-history/vancouver_chinatown.html)
+          <br>[7] Simon Fraser University (http://www.sfu.ca/chinese-canadian-history/victoria_chinatown.html)
+          <br>[8] Simon Fraser University (http://www.sfu.ca/chinese-canadian-history/edmonton_chinatown_en.html)
+          <br>[9] Simon Fraser University (http://www.sfu.ca/chinese-canadian-history/montreal_chinatown_en.html)
+          <br>[10] Simon Fraser University (http://www.sfu.ca/chinese-canadian-history/winnipeg_chinatown_en.html)
+          <br>[11] Simon Fraser University (http://www.sfu.ca/chinese-canadian-history/calgary_chinatown_en.html)
+          <br>[12] 同心救國與八年黨禁( https://projects.zo.uni-heidelberg.de/archive2/DACHS_Leiden/archive/leiden/topical/banned/20050321/www.huanghuagang.org/issue05/big5/5_3.html)</p>
+      </div>
+      
+      <div class="content">
+        <h2>Sources: Cease Branch</h2>
+        <p>[1] 中國國民黨駐加拿大總支部 文獻
+          <br>[2] 中國國民黨域多利分部 文獻 
+          <br>[3] Dr Alison R Marshall, Brandon University (https://people.brandonu.ca/marshalla/) 
+          <br>[4] The Paul Yee Archives (https://searcharchives.vancouver.ca/paul-yee-fonds) 
+          <br>      Duncan branch (https://searcharchives.vancouver.ca/image-of-chinese-nationalist-league-building-in-duncan-or-nanaimo-b-c) 
+          <br>      Nanaimo branch (https://searcharchives.vancouver.ca/bing-kee-street-sign-near-the-chinese-nationalist-league-building-in-nanaimo-b-c) 
+          <br>      Port Alberni branch (https://searcharchives.vancouver.ca/man-standing-on-the-balcony-of-the-chinese-nationalist-league-building-in-nanaimo-b-c) 
+          <br>[5] University of Victoria Digital Exhibits (https://exhibits.library.uvic.ca/spotlight/chinese-newspapers/catalog/13-17711) 
+          <br>[6] University of Victoria Digital Exhibits (https://exhibits.library.uvic.ca/spotlight/chinese-newspapers/catalog/13-17714) 
+          <br>[7] CBC News (https://www.cbc.ca/news/canada/calgary/heritage-building-torn-down-in-lethbridge-1.1125499) 
+          <br>[8] Cumberland Museum (https://cumberlandmuseum.ca/) 
+          <br>[9] 同心救國與八年黨禁( https://projects.zo.uni-heidelberg.de/archive2/DACHS_Leiden/archive/leiden/topical/banned/20050321/www.huanghuagang.org/issue05/big5/5_3.html)</p>
+      </div>
+      
+      <div class="content">
+        <h2>Sources: Active Branch Office</h2>
+        <p>[1] 中國國民黨駐加拿大總支部 文獻
+          <br>[2] 中國國民黨域多利分部 文獻
+          <br>[3] Dr Alison R Marshall, Brandon University (https://people.brandonu.ca/marshalla/)
+          <br>[4] The Paul Yee Archives (https://searcharchives.vancouver.ca/paul-yee-fonds) 
+          <br>      Victoria branch (https://searcharchives.vancouver.ca/chinese-nationalist-league-sign-victoria-b-c)
+          <br>[5] Simon Fraser University (http://www.sfu.ca/chinese-canadian-history/toronto_chinatown.html)</p>
+      </div>
+      
+      <div class="content">
+        <h2>Sources: Cease Branch Office</h2>
+        <p>[1] 中國國民黨駐加拿大總支部 文獻
+          <br>[2] 中國國民黨域多利分部 文獻
+          <br>[3] Dr Alison R Marshall, Brandon University (https://people.brandonu.ca/marshalla/)
+          <br>[4] The Paul Yee Archives (https://searcharchives.vancouver.ca/paul-yee-fonds) 
+          <br>      Duncan branch (https://searcharchives.vancouver.ca/image-of-chinese-nationalist-league-building-in-duncan-or-nanaimo-b-c) 
+          <br>[5] Cumberland Museum (https://cumberlandmuseum.ca/)
+          <br>[6] CBC News (https://www.cbc.ca/news/canada/calgary/heritage-building-torn-down-in-lethbridge-1.1125499) 
+          <br>[7] Times Colonist (https://www.timescolonist.com/archive/mcpherson-theatre-survived-a-long-line-of-owners-4609004)</p>
+      </div>
+          </div>
+      </div>
+
+</body>
+</html>
+
+
