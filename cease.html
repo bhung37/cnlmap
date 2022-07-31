@@ -162,7 +162,7 @@
                 lineJoin: 'miter',
                 weight: 1.0, 
                 fill: true,
-                fillOpacity: 0.5,
+                fillOpacity: 1,
                 fillColor: 'rgba(228,26,28,1.0)',
                 interactive: true,
             }
@@ -170,7 +170,7 @@
         map.createPane('pane_BranchCeasetofunction_3');
         map.getPane('pane_BranchCeasetofunction_3').style.zIndex = 403;
         map.getPane('pane_BranchCeasetofunction_3').style['mix-blend-mode'] = 'normal';
-        var layer_BranchCeasetofunction_3 = new L.geoJson(json_BranchCeasetofunction_4, {
+        var layer_BranchCeasetofunction_3 = new L.geoJson(json_BranchCeasetofunction_3, {
             attribution: '',
             interactive: true,
             dataVar: 'json_BranchCeasetofunction_3',
@@ -192,7 +192,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/BranchCeasetofunction_4.png" /> Branch Cease to function': layer_BranchCeasetofunction_3,"GOV Canada - National Railway Network - NRWN - GeoBase Series": layer_GOVCanadaNationalRailwayNetworkNRWNGeoBaseSeries_2,"Blocked Passage/Toll point/Road Ferry/Road network (30 Million)/Road network (7.5 Million)/Road network (1 Million)/Express/Highway/Resource and Recreation/Service Lane/Local/Road Segment - Alleyway": layer_BlockedPassageTollpointRoadFerryRoadnetwork30MillionRoadnetwork75MillionRoadnetwork1MillionExpressHighwayResourceandRecreationServiceLaneLocalRoadSegmentAlleyway_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/BranchCeasetofunction_3.png" /> Branch Cease to function': layer_BranchCeasetofunction_3,"GOV Canada - National Railway Network - NRWN - GeoBase Series": layer_GOVCanadaNationalRailwayNetworkNRWNGeoBaseSeries_2,"Blocked Passage/Toll point/Road Ferry/Road network (30 Million)/Road network (7.5 Million)/Road network (1 Million)/Express/Highway/Resource and Recreation/Service Lane/Local/Road Segment - Alleyway": layer_BlockedPassageTollpointRoadFerryRoadnetwork30MillionRoadnetwork75MillionRoadnetwork1MillionExpressHighwayResourceandRecreationServiceLaneLocalRoadSegmentAlleyway_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
         setBounds();
         var i = 0;
         layer_BranchCeasetofunction_3.eachLayer(function(layer) {
