@@ -33,6 +33,28 @@
             </ul>
         </nav>
         </header>
+        <div id="Sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="cnloc.html">CNLOC</a>
+            <a href="vancouver.html">Vancouver</a>
+            <a href="victoria.html">Victoria</a>
+            <a href="calgary.html">Calgary</a>
+            <a href="edmonton.html">Edmonton</a>
+            <a href="regina.html">Regina</a>
+            <a href="winnipeg.html">Winnipeg</a>
+            <a href="toronto.html">Toronto</a>
+            <a href="montreal.html">Montreal</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Active Branches</span>
+        <script>
+            function openNav() {
+              document.getElementById("Sidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("Sidenav").style.width = "0";
+            }
+            </script>
         <!--end of custom-->
         <div id="map">
         </div>
