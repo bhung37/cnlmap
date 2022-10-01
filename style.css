@@ -4,10 +4,7 @@
     padding: 0;
 }
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+    margin: 0;
 }
 .column {
   float: left;
@@ -23,11 +20,30 @@ header{
 }
 
 .nav__links{
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkblue;
 }
 .nav__links li{
-   display: inline-block;
+   float: left;
    padding: 0px 20px;
+}
+.nav__links li a{
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: center;
+}
+.nav__links li a:hover {
+  color: #f1f1f1;
+}
+.nav__links li.right {
+  float: right;
 }
 .sidenav {
     height: 100%;
@@ -63,13 +79,39 @@ header{
     margin-left: 50px;
   }
   
-  @media screen and (max-height: 450px) {
+  @media screen and (max-height: 650px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-  
+  @media screen and (max-width: 800px) {
+    .nav__links li.right,
+    .nav__links li {float: none;}
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
   img {
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
-}
+  }
+  div.image-box{
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+  }
+  div.header-box{
+    width: 80%;
+    background-color: white;
+    margin-bottom: 25px;
+  }
+  div.map-box{
+    width: 80%;
+    background-color: white;
+    margin-bottom: 25px;
+  }
+  div.container {
+    text-align: center;
+    padding: 10px 20px;
+  }
